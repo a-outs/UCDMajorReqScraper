@@ -1,0 +1,117 @@
+AABI-Animal Biology
+AAEE-Agric & Environ Education
+AANM-Animal Science & Mgmt
+AANS-Animal Science
+AATM-Atmospheric Science
+ABIT-Biotechnology
+ACNU-Clinical Nutrition
+ACRD-Community & Reg Develop
+AEBM-Environ Biology & Mangt
+AEEB-Evolu, Ecology & Biodiv
+AEHF-Environ Hort & Urban For
+AEMR-Ecological Mgmt & Rest
+AENT-Entomology
+AEPP-Environ Policy Anl & Plan
+AESM-Environ Sci & Management
+AETX-Environmental Toxicology
+AEVE-Evolution and Ecology
+AFPS-Fiber and Polymer Science
+AFSC-Food Science
+AGDB-Global Disease Biology
+AHDE-Human Development
+AHYD-Hydrology
+AIAD-Intern'l Agri Devlopmt
+ALDA-Landscape Architecture
+AMCS-Marine and Coastal Sci
+AMGE-Managerial Economics
+ANSC-Nutrition Science
+APLA-Pre-Landscape Arch
+APLT-Plant Sciences
+APME-Pre-Managerial Economics
+ASAF-Sustainable Ag & Food Sys
+ASED-Sustainable Env Design
+ATXC-Textiles & Clothing
+AVEN-Viticulture & Enology
+AWFC-Wildlife,Fish & Con Bio
+BBIS-Biological Sciences
+BBMB-Biochem & Molecular Bio
+BCBI-Cell Biology
+BEEB-Evolution, Ecol & Biodiv
+BGGN-Genetics and Genomics
+BMCS-Marine and Coastal Sci
+BMIC-Microbiology
+BNPB-Neurobiol, Phys & Behav
+BPLB-Plant Biology
+EASE-Aerospace Sci & Engineer
+EBCL-Biochemical Engineering
+EBIM-Biomedical Engineering
+EBSE-Biological Systems Engr
+ECIV-Civil Engineering
+ECML-Chemical Engineering
+ECOM-Computer Engineering
+ECSE-Computer Science & Engr
+EEEL-Electrical Engineering
+EENV-Environmental Engineering
+EMEC-Mechanical Engineering
+EMSE-Materials Science & Engr
+LAAA-African Amer&African Stud
+LAHI-Art History
+LAMA-Applied Mathematics
+LAMS-American Studies
+LANT-Anthropology
+LAPP-Applied Physics
+LASA-Asian American Studies
+LASD-Art Studio
+LCDM-Cinema and Digital Media
+LCGS-Cognitive Science
+LCHE-Chemistry
+LCHI-Chicana/O Studies
+LCHN-Chinese
+LCLC-Classical Civilization
+LCMN-Communication
+LCOM-Comparative Literature
+LCPH-Chemical Physics
+LCSI-Computer Science
+LDES-Design
+LDRA-Dramatic Art
+LEAS-East Asian Studies
+LECN-Economics
+LENL-English
+LFMS-Film Studies
+LFRE-French
+LGEL-Geology
+LGER-German
+LGSW-Gender, Sexlty & Wmns St
+LHIS-History
+LIRE-International Relations
+LITA-Italian
+LJPN-Japanese
+LLIN-Linguistics
+LMAT-Mathematics
+LMCO-Math & Scientific Comput
+LMCS-Marine and Coastal Sci
+LMMS-Mediev & Early Modern Std
+LMOR-Math Analytics & Ops Rsch
+LMSA-Middle East/South Asia St
+LMUS-Music
+LNAS-Native American Studies
+LNTS-Natural Sciences
+LPHI-Philosophy
+LPHY-Physics
+LPLB-Plant Biology
+LPMC-Pharmaceutical Chemistry
+LPOL-Political Science
+LPPS-Political Science Pub Ser
+LPSB-Psychology - Biology Emph
+LPSC-Psychology
+LPSM-Psychology - Math Emph
+LRST-Religious Studies
+LRUS-Russian
+LSOC-Sociology
+LSOR-Sociology-Org Studies
+LSPA-Spanish
+LSTA-Statistics
+LSTS-Science & Technology Stud
+LTAD-Theatre and Dance
+LTCS-Technocultural Studies
+LWMS-Women's Studies

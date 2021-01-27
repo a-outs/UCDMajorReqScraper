@@ -1,2 +1,5 @@
 #ignore token file
 bearer.token
+
+#ignore the outputted json files
+output/
