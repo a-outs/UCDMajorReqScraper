@@ -40,28 +40,33 @@ for i in responseJson["blockArray"]:
                         print(k["label"])
                         outputDict[major].append({k["label"] : []})
                         for l in k["requirement"]["courseArray"]:
+                            courseString = ""
+                            courseReqsString = ""
                             if("numberEnd" in l):
                                 print("\t" + l["discipline"] + "-" + l["number"] + "-" + l["numberEnd"])
-                                outputDict[major][len(outputDict[major])-1][k["label"]].append({"course" : l["discipline"] + "-" + l["number"] + "-" + l["numberEnd"], "prerequisites" : ""})
+                                courseString = l["discipline"] + "-" + l["number"] + "-" + l["numberEnd"]
                             else:
                                 courseReqsRaw = requests.get("https://mydegree.ucdavis.edu/responsiveDashboard/api/course-link?discipline=" + l["discipline"] + "&number=" + l["number"] + "&", headers=hed)
                                 courseReqs = courseReqsRaw.json()["courseInformation"]["courses"]
-                                courseReqsString = ""
                                 if "prerequisites" in courseReqs[0]:
                                     for m in courseReqs[0]["prerequisites"]:
                                         courseReqsString += m["connector"] + " " + m["leftParenthesis"] + m["subjectCodePrerequisite"] + "-" + m["courseNumberPrerequisite"] + m["rightParenthesis"] + " "
                                 print("\t" + l["discipline"] + "-" + l["number"] + courseReqsString)
-                                outputDict[major][len(outputDict[major])-1][k["label"]].append({"course" : l["discipline"] + "-" + l["number"], "prerequisites" : courseReqsString})
+                                courseString = l["discipline"] + "-" + l["number"]
+                            outputDict[major][len(outputDict[major])-1][k["label"]].append({"course" : courseString, "prerequisites" : courseReqsString.strip()})
+
                         if("except" in k["requirement"]):
                             print("\tEXCEPT:")
                             outputDict[major][len(outputDict[major])-1][k["label"]].append({"EXCEPT":[]})
                             for m in k["requirement"]["except"]["courseArray"]:
+                                courseString = ""
                                 if("numberEnd" in m):
-                                    print("\t\t" + m["discipline"] + "-" + m["number"] + "-" + m["numberEnd"])
-                                    outputDict[major][len(outputDict[major])-1][k["label"]][len(outputDict[major][len(outputDict[major])-1][k["label"]])-1]["EXCEPT"].append(m["discipline"] + "-" + m["number"] + "-" + m["numberEnd"])
+                                    courseString = m["discipline"] + "-" + m["number"] + "-" + m["numberEnd"]
+                                    print("\t\t" + courseString)
                                 else:
-                                    print("\t\t" + m["discipline"] + "-" + m["number"])
-                                    outputDict[major][len(outputDict[major])-1][k["label"]][len(outputDict[major][len(outputDict[major])-1][k["label"]])-1]["EXCEPT"].append(m["discipline"] + "-" + m["number"])
+                                    courseString = m["discipline"] + "-" + m["number"]
+                                    print("\t\t" + courseString)
+                                outputDict[major][len(outputDict[major])-1][k["label"]][len(outputDict[major][len(outputDict[major])-1][k["label"]])-1]["EXCEPT"].append(m["discipline"] + "-" + m["number"])
 json.dump(outputDict, outputFile, indent=4)
 outputFile.close()
 raw.close()
